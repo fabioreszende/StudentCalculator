@@ -8,13 +8,14 @@
 
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/nota1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="88dp"
         android:background="#00BCD4"
         android:ems="10"
-        android:hint="             Nota 1"
+        android:gravity="center"
+        android:hint="Nota 1"
         android:inputType="textPersonName"
         android:padding="20dp"
         android:textColorHint="#FFFFFF"
@@ -23,44 +24,61 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/nota2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="176dp"
+        android:layout_marginTop="20dp"
         android:background="#00BCD4"
         android:ems="10"
-        android:hint="             Nota 2"
+        android:gravity="center"
+        android:hint="Nota 2"
         android:inputType="textPersonName"
         android:padding="20dp"
         android:textColorHint="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/nota1" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName3"
+        android:id="@+id/faltas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="264dp"
+        android:layout_marginTop="20dp"
         android:background="#00BCD4"
         android:ems="10"
-        android:hint="             N Faltas"
+        android:gravity="center"
+        android:hint="N Faltas"
         android:inputType="textPersonName"
         android:padding="20dp"
         android:textColorHint="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/nota2" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
+        <Button
+        android:id="@+id/calculate"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="352dp"
+        android:layout_marginTop="60dp"
         android:background="#00BCD4"
-        android:text="CALCULATE"
+        android:text="@string/Calculater"
+        android:textColor="@color/white"
         app:backgroundTint="#00BCD4"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/faltas" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calculate"
+        app:layout_constraintVertical_bias="0.055" />
 </androidx.constraintlayout.widget.ConstraintLayout>
